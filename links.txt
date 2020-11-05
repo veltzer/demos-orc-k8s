@@ -1,0 +1,6 @@
+github:
+	kubernetes the hard way
+rancher
+anton
+spinaker
+kind
