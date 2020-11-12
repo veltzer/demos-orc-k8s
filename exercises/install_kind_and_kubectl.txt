@@ -1,0 +1,34 @@
+cleanup old dockers on your machine
+	(images and containers)
+
+install kubectl latest:
+- install kubectl as per:
+	https://kubernetes.io/docs/tasks/tools/install-kubectl/
+- check that you have kubectl by using:
+	$ kubectl -version
+	you should get version 1.19.4
+- put it in ~/bin
+- add
+	export PATH=PATH:${HOME}/bin
+	to your ~/.bashrc
+- re-login
+
+install go on your machine:
+- sudo apt install golang-go
+- add a folder in your homedir called ~/install/go
+- add a few environment variables in ~/.bashrc:
+	export GOPATH="${HOME}/install/go"
+	export PATH=PATH:${GOPATH}/bin
+
+install kind: https://kind.sigs.k8s.io/docs/user/quick-start/
+to install kind:
+	$ GO111MODULE="on" go get sigs.k8s.io/kind@v0.9.0
+	for 0.9.0
+to get lastest use:
+	$ go get sigs.k8s.io/kind
+ask kind for it's version (use 0.9.0):
+	$ kind version
+	kind v0.9.0 go1.14.7 linux/amd64
+for latest you will get:
+	$ kind version
+	kind v0.10.0-alpha go1.14.7 linux/amd64
