@@ -1,3 +1,11 @@
+stand alone (with no container technology underneath)
+docker desktop
+rancher desktop
 minikube
-kind
 microk8s
+podman/podman desktop
+
+container based
+kind
+k3d
+minikube
