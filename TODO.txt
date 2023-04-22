@@ -1,0 +1,2 @@
+- do demo of sidecar containers
+- do demo of init containers
