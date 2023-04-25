@@ -1,11 +1,14 @@
-
-* this exercise should be done only after you have 'kind' and 'kubectl'
-	installed and configured with the right versions.
-
-- create a cluster using 'kind'
-- describe the nodes in the cluster using 'kubectl describe nodes'
-- run an nginx pod on the cluster.
-- describe the pod you just ran using 'kubectl describe pods'
+- create a deployment.yaml file to deploy nginx on your cluster
+- deploy this on your cluster
+	$ kubectl apply -f deployment.yaml
+- see your new pod using:
+	$ kubectl get pods 
+- see more information about your new pod using:
+	$ kubectl describe pods
 - find out how to expose the ports of you pod to the outside network - and do it.
 - access you nginx web server from the host.
 	use wget
+- access your pod using:
+	$ kubectl exec -it 
+- run your deployment command again.
+	did k8s deploy another pod? Why?
