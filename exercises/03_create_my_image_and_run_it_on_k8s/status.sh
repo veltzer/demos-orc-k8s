@@ -1,2 +1,2 @@
 #!/bin/sh
-microk8s.kubectl get po
+kubectl get pods

@@ -1,6 +1,0 @@
-Create a python web server that dies when you access it's "/crash" url
-run that python as a pod with replication level=1 in minikube
-crash the web server by accessing it's "/crash" url
-what does k8s do?
-What if you run the pod idividually?
-What is you run the pod with apply -f [deployment.yaml]?
