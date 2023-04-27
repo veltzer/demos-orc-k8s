@@ -1,3 +1,3 @@
 #!/bin/sh
 
-kubectl delete -f *.yaml
+kubectl delete -f ./*.yaml

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-kubectl apply -f *.yaml
+kubectl apply -f ./*.yaml
