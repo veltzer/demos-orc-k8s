@@ -1,11 +1,7 @@
-""" general definitions for this project """
-
-# pylint: disable=invalid-name
-description_short = "Demos-docker shows you how to do things with docker"
+name = "demos-k8s"
+description_short = "Demos-k8s shows you how to use kubernetes"
 keywords = [
+    "kubernetes",
     "docker",
-    "container",
-    "engine",
-    "docker-hub",
-    "images",
+    "orchestration",
 ]
