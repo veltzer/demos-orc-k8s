@@ -1,5 +1,5 @@
-- create a deployment.yaml file to deploy nginx on your cluster
-- deploy this on your cluster
+- create a "deployment.yaml" file to deploy nginx on your cluster
+- deploy on your cluster using:
 	$ kubectl apply -f deployment.yaml
 - see your new pod using:
 	$ kubectl get pods
@@ -8,7 +8,7 @@
 - find out how to expose the ports of you pod to the outside network - and do it.
 - access you nginx web server from the host.
 	use wget
-- access your pod using:
+- enter your pod using:
 	$ kubectl exec -it 
 - run your deployment command again.
 	did k8s deploy another pod? Why?
