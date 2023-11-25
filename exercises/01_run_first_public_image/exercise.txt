@@ -2,7 +2,7 @@
 - deploy this on your cluster
 	$ kubectl apply -f deployment.yaml
 - see your new pod using:
-	$ kubectl get pods 
+	$ kubectl get pods
 - see more information about your new pod using:
 	$ kubectl describe pods
 - find out how to expose the ports of you pod to the outside network - and do it.
