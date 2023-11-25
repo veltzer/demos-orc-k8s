@@ -14,7 +14,7 @@ import time
 import sys
 
 print(f"line_buffering is {sys.stdout.line_buffering}...")
-# sys.stdout.reconfigure(line_buffering=True)
+sys.stdout.reconfigure(line_buffering=True)
 print(f"line_buffering is {sys.stdout.line_buffering}...")
 i = 0
 while True:

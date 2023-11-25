@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-deployment
+  name: app
 spec:
   selector:
     matchLabels:
@@ -12,9 +12,10 @@ spec:
       labels:
         app: app
     spec:
+      hostNetwork: true
       containers:
       - name: app
-        # no version means latest
-        image: 03_create_my_image_run_it_and_see_logs:latest
+        image: 03_create_my_image_run_it_and_see_logs
+        imagePullPolicy: Never
         ports:
         - containerPort: 80
