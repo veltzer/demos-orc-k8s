@@ -15,6 +15,8 @@ DO_LINT:=1
 DO_FLAKE8:=1
 # do you want to lint python files using mypy?
 DO_MYPY:=1
+# do you want to run mdl on md files?
+DO_MD_MDL:=1
 
 ########
 # code #
@@ -42,6 +44,8 @@ ALL_LINT:=$(addprefix out/,$(addsuffix .lint, $(basename $(ALL_PY))))
 ALL_FLAKE8:=$(addprefix out/,$(addsuffix .flake8, $(basename $(ALL_PY))))
 ALL_MYPY:=$(addprefix out/,$(addsuffix .mypy, $(basename $(ALL_PY))))
 ALL_STAMP:=$(addprefix out/, $(addsuffix .stamp, $(ALL_SH)))
+MD_SRC:=$(shell find . -type f -and -name "*.md")
+MD_MDL:=$(addprefix out/,$(addsuffix .mdl,$(MD_SRC)))
 
 ifeq ($(DO_CHECK_SYNTAX),1)
 ALL+=$(ALL_STAMP)
@@ -76,6 +80,8 @@ debug:
 	$(info ALL_SH is $(ALL_SH))
 	$(info ALL_PY is $(ALL_PY))
 	$(info ALL_STAMP is $(ALL_STAMP))
+	$(info MD_SRC is $(MD_SRC))
+	$(info MD_MDL is $(MD_MDL))
 
 .PHONY: first_line_stats
 first_line_stats:
