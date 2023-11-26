@@ -1,3 +1,5 @@
+# Deploying your first service
+
 * Same as the hello, create a docker image with a web server.
 * import it into the local microk8s repo
 * run two pods with that image
@@ -7,9 +9,5 @@
 
 In this exercise you are creating 2 k8s objects: 1 pod with replication=2 and 1 load balancer.
 And we connecting them in a very specific way:
-
-								------- POD1
-								|
-			service (with exposed IP/PORT) ---------|
-								|
-								------- POD2
+* The service is connected to the outside world.
+* The pods are connected to the service.

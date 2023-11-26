@@ -1,3 +1,5 @@
+# Deleting pods
+
 * write a python pod that catches signals.
 * run the pod
 * do kubectl delete pod [yourpod]
@@ -6,4 +8,4 @@
 * Change that time period
 
 References:
-- https://unofficial-kubernetes.readthedocs.io/en/latest/concepts/abstractions/pod-termination
+* [pod-termination](https://unofficial-kubernetes.readthedocs.io/en/latest/concepts/abstractions/pod-termination)

@@ -44,7 +44,7 @@ ALL_LINT:=$(addprefix out/,$(addsuffix .lint, $(basename $(ALL_PY))))
 ALL_FLAKE8:=$(addprefix out/,$(addsuffix .flake8, $(basename $(ALL_PY))))
 ALL_MYPY:=$(addprefix out/,$(addsuffix .mypy, $(basename $(ALL_PY))))
 ALL_STAMP:=$(addprefix out/, $(addsuffix .stamp, $(ALL_SH)))
-MD_SRC:=$(shell find . -type f -and -name "*.md")
+MD_SRC:=$(shell find exercises -type f -and -name "*.md")
 MD_MDL:=$(addprefix out/,$(addsuffix .mdl,$(MD_SRC)))
 
 ifeq ($(DO_CHECK_SYNTAX),1)
@@ -66,6 +66,10 @@ endif # DO_FLAKE8
 ifeq ($(DO_MYPY),1)
 ALL+=$(ALL_MYPY)
 endif # DO_MYPY
+
+ifeq ($(DO_MD_MDL),1)
+ALL+=$(MD_MDL)
+endif # DO_MD_MDL
 
 #########
 # rules #
@@ -128,3 +132,8 @@ $(ALL_MYPY): out/%.mypy: %.py
 	$(info doing [$@])
 	$(Q)pymakehelper only_print_on_error mypy $<
 	$(Q)pymakehelper touch_mkdir $@
+$(MD_MDL): out/%.mdl: % .mdlrc .mdl.style.rb
+	$(info doing [$@])
+	$(Q)GEM_HOME=gems gems/bin/mdl $<
+	$(Q)mkdir -p $(dir $@)
+	$(Q)touch $@
