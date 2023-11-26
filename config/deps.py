@@ -2,6 +2,9 @@
 os level dependencies for this project
 """
 packages = [
-    "bash-static",
+    # for checking my shell scripts
     "shellcheck",
+    # ruby stuff
+    "ruby-bundler",
+    "rbenv",
 ]
