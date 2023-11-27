@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/bash -e
 image_name=$(basename "${PWD}")
-docker build --tag "${image_name}:latest" .
+docker buildx build --tag "${image_name}:latest" .
