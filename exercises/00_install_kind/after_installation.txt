@@ -1,2 +1,0 @@
-Describe all the nodes in your cluster using:
-	$ kubectl describe nodes

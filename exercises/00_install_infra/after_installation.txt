@@ -1,0 +1,4 @@
+Use the following commands to describe your cluster:
+	$ kubectl describe nodes
+	$ kubectl describe pods
+	$ kubectl get namespaces
