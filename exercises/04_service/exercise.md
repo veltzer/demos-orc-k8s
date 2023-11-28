@@ -33,8 +33,8 @@ And we connecting them in a very specific way:
     `$ kubectl proxy`
 * now access your service via:
     `http://localhost:8001/api/v1/namespaces/[namespace]/services/[service-name]/proxy`
-    * namespace = defualt
-    * service-name = your service name
+    * namespace = "default"
+    * service-name = [your-service-name]
 * The problem with the proxy is that you have to keep the proxy process alive to access your service.
 
 ## Access with port forwarding
