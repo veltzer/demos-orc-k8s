@@ -19,8 +19,9 @@ And we connecting them in a very specific way:
 * Deploy it.
 * See your newly created service with:
     `$ kubectl show services`
+    and
     `$ kubectl describe service [service_name]`
-    * Note that a services called `kubernetes` is already there. Don't touch it.
+    * Note that a service called `kubernetes` is already there. Don't touch it.
 * You can't still can't access your service, can you?
 
 ## Access with node port
