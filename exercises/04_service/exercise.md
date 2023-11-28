@@ -9,7 +9,7 @@ And we connecting them in a very specific way:
 * The service is provides a stable point of communication.
 * The pods are connected to the service.
 
-## We will expose the service to the outside world using three ways:
+## We will expose the service to the outside world using three ways
 * node port
 * proxy
 * port forwarding
