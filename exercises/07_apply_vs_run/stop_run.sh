@@ -1,2 +1,2 @@
-#!/bin/sh
+#!/bin/bash -e
 kubectl delete pod app
