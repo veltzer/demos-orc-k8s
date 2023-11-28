@@ -1,1 +1,2 @@
 - did the first exercise (almost fully done)
+- added linting of md files.
