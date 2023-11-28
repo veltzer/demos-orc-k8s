@@ -1,15 +1,15 @@
 # Deply first public image
 
-* create a "deployment.yaml" file to deploy nginx on your cluster
+* create a `deployment.yaml` file to deploy standard nginx on your cluster
 * deploy on your cluster using:
-    $ kubectl apply -f deployment.yaml
+    `$ kubectl apply -f deployment.yaml`
 * see your new pod using:
-    $ kubectl get pods
+    `$ kubectl get pods`
 * see more information about your new pod using:
-    $ kubectl describe pods
-* find out how to expose the ports of you pod to the outside network - and do it.
+    `$ kubectl describe pods`
+* expose the port of your pod to the outside network.
 * access you nginx web server from the host.
-    use wget
+    use wget(1) or curl(1), or just a browser
 * enter your pod using:
     `$ kubectl exec -it`
 * run your deployment command again.

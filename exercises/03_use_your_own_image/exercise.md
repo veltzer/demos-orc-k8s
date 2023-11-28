@@ -1,9 +1,10 @@
 # Pull image from local Docker into minikube
 
 * pull an image (nginx) to your local docker repository.
+    `$ docker pull nginx`
 * copy that image into your minikube repository using:
-    $ minikube image load [image name]
-* then run a deployment on minikube that uses the image.
+    `$ minikube image load nginx`
+* then run a deployment on minikube that uses that image.
 
 * create your own image from a pyton app that prints regularly to standard output.
     You will need to use:
