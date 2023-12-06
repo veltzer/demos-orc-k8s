@@ -1,4 +1,4 @@
-# Deply first public image
+# Deploy first public image
 
 * create a `deployment.yaml` file to deploy standard nginx on your cluster
 * deploy on your cluster using:
@@ -14,3 +14,5 @@
     `$ kubectl exec -it`
 * run your deployment command again.
     did k8s deploy another pod? Why?
+* Deploy 2 nginx pods using "replicas: 2" and show how you can access each nginx
+    separately.
