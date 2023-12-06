@@ -15,4 +15,4 @@
 * run your deployment command again.
     did k8s deploy another pod? Why?
 * Deploy 2 nginx pods using "replicas: 2" and show how you can access each nginx
-    separately.
+    separately. Do not use a service!

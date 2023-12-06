@@ -44,4 +44,4 @@ And we connecting them in a very specific way:
 * The problem with port-forwarding is that you have to keep the port forwarding process alive access your service.
 
 ## Answer a few questions
-* Why method for access do you find best and why?
+* Which method for access do you find best and why?
