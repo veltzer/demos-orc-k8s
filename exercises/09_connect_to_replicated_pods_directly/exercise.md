@@ -7,5 +7,5 @@
 * Do not use any service, proxies or exported ports. Connect directly to the pods.
 
 References:
-* https://kubernetes.io/docs/tutorials/services/connect-applications-service/
-* https://minikube.sigs.k8s.io/docs/commands/ssh/
+* [how to connect](https://kubernetes.io/docs/tutorials/services/connect-applications-service/)
+* [how to ssh](https://minikube.sigs.k8s.io/docs/commands/ssh/)
