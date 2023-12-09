@@ -3,7 +3,7 @@
 * write a python app that calculates the sum of squares until 100,000,000
     this will take about 10 seconds or so
 * wrap it up in a docker image
-* create a job that will run your image once, call the deploynet `job.yaml'
+* create a job that will run your image once, call the deploynet `job.yaml`
 * run your job using:
     `$ kubectl apply -f job.yaml`
     remember to put:
