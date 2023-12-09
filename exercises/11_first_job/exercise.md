@@ -11,11 +11,13 @@
     so that minikube will not try to pull your image from docker.hub
 * view your job using:
     `$ kubectl get jobs`
+* see details of your job using:
+    `$ kubectl describe jobs.batch [yourjobname]`
 * look at your logs using:
-    `$ kubectl logs jobs/[your_job_name]`
+    `$ kubectl logs jobs/[yourjobname]`
 * when the job is done show the logs of your job
 * delete your job with:
-    `$ kubectl delete jobs.batch [your_job_name]`
+    `$ kubectl delete jobs.batch [yourjobname]`
 
 References:
 * [job specification in k8s](https://kubernetes.io/docs/concepts/workloads/controllers/job)
