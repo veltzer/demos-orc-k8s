@@ -5,7 +5,7 @@
 * wrap it up in a docker image
 * create a job that will run your image once, call the deploynet `job.yaml'
 * run your job using:
-    `$ kubectl apply -f job.yaml" 
+    `$ kubectl apply -f job.yaml`
     remember to put:
         imagePullPolicy: Never
     so that minikube will not try to pull your image from docker.hub
