@@ -19,5 +19,12 @@
 * delete your job with:
     `$ kubectl delete jobs.batch [yourjobname]`
 
+Notice that in the exercise so far the job lives in your cluster forever. You may want to get ridd of this
+job after some time. So here is the second part:
+
+* use `ttlSecondsAfterFinished: 100` in your `job.yaml` so that the job gets erased automatically after a certain time.
+* see that it works.
+
 References:
 * [job specification in k8s](https://kubernetes.io/docs/concepts/workloads/controllers/job)
+* [auto cleanup of jobs](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished)
