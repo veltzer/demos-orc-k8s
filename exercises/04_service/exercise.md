@@ -18,7 +18,7 @@ And we connecting them in a very specific way:
 * Create a deployment file with a `nginx` replicated twice and a service.
 * Deploy it.
 * See your newly created service with:
-    `$ kubectl show services`
+    `$ kubectl get services`
     and
     `$ kubectl describe service [service_name]`
     * Note that a service called `kubernetes` is already there. Don't touch it.
