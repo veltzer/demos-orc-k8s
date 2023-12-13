@@ -39,7 +39,7 @@ And we connecting them in a very specific way:
 
 ## Access with port forwarding
 * Create a port forwarder to your service:
-    `$ kubectl port-forward [serice-name]:8080`
+    `$ kubectl port-forward [service-name]:8080`
 * Now you can access your service at `localhost:8080`
 * The problem with port-forwarding is that you have to keep the port forwarding process alive access your service.
 
