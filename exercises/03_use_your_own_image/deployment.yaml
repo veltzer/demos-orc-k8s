@@ -15,7 +15,7 @@ spec:
       hostNetwork: true
       containers:
       - name: app
-        image: 02_pull_from_local_docker
+        image: 03_use_your_own_image
         imagePullPolicy: Never
         ports:
         - containerPort: 80

@@ -7,15 +7,16 @@
 * then run a deployment on minikube that uses that image.
 
 * create your own image from a pyton app that prints regularly to standard output.
-    You will need to use:
-        $ minikube image build [params] .
-    instead of the regular:
-        $ docker build [params] .
+    use the following command to build your image:
+        `$ docker build [params] .`
+    load your image to minikube using:
+        `$ minikube image rm "${image_name}"`
+        `$ minikube image load "${image_name}"`
 * run that image using:
-    $ kubectl run [params]
+    `$ kubectl run [params]`
 * see that pod running using:
-    $ kubectl get pods
+    `$ kubectl get pods`
 * see the logs of the pod using:
-    $ kubectl logs [...]
+    `$ kubectl logs [...]`
 * terminate the pod using:
-    $ kubectl delete pod [...]
+    `$ kubectl delete pod [...]`
