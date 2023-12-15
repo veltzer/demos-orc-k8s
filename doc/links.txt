@@ -4,3 +4,6 @@ rancher
 anton
 spinaker
 kind
+
+official k8s documentation:
+	https://kubernetes.io/docs/home/
