@@ -1,7 +1,5 @@
 # Run your own image
 
-### this is a mistake
-
 * create your own image from a pyton app that prints regularly to standard output.
     You will need to use:
         `$ minikube image build [params] .`
