@@ -29,7 +29,7 @@ And we connecting them in a very specific way:
 * now access your service via: `http://$(minikube ip):30000"`
 
 ## Access with proxy
-* run a kubectl proxy:
+* run a `kubectl` proxy:
     `$ kubectl proxy`
 * now access your service via:
     `http://localhost:8001/api/v1/namespaces/[namespace]/services/[service-name]/proxy`

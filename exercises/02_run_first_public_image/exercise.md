@@ -9,7 +9,7 @@
     `$ kubectl describe pods`
 * expose the port of your pod to the outside network.
 * access you nginx web server from the host.
-    use wget(1) or curl(1), or just a browser
+    use get(1) or curl(1), or just a browser
 * enter your pod using:
     `$ kubectl exec -it`
 * run your deployment command again.

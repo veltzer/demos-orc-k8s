@@ -1,3 +1,3 @@
-# Using persistent volunmes
+# Using persistent volumes
 
 TBD

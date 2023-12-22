@@ -8,6 +8,6 @@ Install `kubectl` and `minikube` with the following steps:
 * See that you can use the `kubectl` and `minikube` commands:
     `$ which kubectl`
     `$ which minikube`
-* Now activate minikube by running `$ minikube start --driver=docker`
+* Now activate Minikube by running `$ minikube start --driver=docker`
     Look at the output to see that all goes well.
 * Review the `show_stuff.sh` script and run it to see stuff about your k8s cluster.
