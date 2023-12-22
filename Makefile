@@ -48,7 +48,7 @@ ALL_MYPY:=$(addprefix out/,$(addsuffix .mypy, $(basename $(ALL_PY))))
 ALL_STAMP:=$(addprefix out/, $(addsuffix .stamp, $(ALL_SH)))
 MD_SRC:=$(shell find exercises -type f -and -name "*.md")
 MD_BAS:=$(basename $(MD_SRC))
-MD_MDL:=$(addprefix out/,$(addsuffix .mdl,$(MD_SRC)))
+MD_MDL:=$(addprefix out/,$(addsuffix .mdl,$(MD_BAS)))
 MD_ASPELL:=$(addprefix out/,$(addsuffix .aspell,$(MD_BAS)))
 
 ifeq ($(DO_CHECK_SYNTAX),1)
@@ -142,7 +142,7 @@ $(ALL_MYPY): out/%.mypy: %.py
 	$(info doing [$@])
 	$(Q)pymakehelper only_print_on_error mypy $<
 	$(Q)pymakehelper touch_mkdir $@
-$(MD_MDL): out/%.mdl: % .mdlrc .mdl.style.rb
+$(MD_MDL): out/%.mdl: %.md .mdlrc .mdl.style.rb
 	$(info doing [$@])
 	$(Q)GEM_HOME=gems gems/bin/mdl $<
 	$(Q)mkdir -p $(dir $@)
