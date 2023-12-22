@@ -93,8 +93,9 @@ debug:
 	$(info ALL_PY is $(ALL_PY))
 	$(info ALL_STAMP is $(ALL_STAMP))
 	$(info MD_SRC is $(MD_SRC))
-	$(info MD_MDL is $(MD_MDL))
+	$(info MD_BAS is $(MD_BAS))
 	$(info MD_ASPELL is $(MD_ASPELL))
+	$(info MD_MDL is $(MD_MDL))
 
 .PHONY: first_line_stats
 first_line_stats:
