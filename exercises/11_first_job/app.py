@@ -9,7 +9,7 @@ def main():
     """ main entry point """
     print("starting...")
     my_sum = 0
-    for i in range(100000000):
+    for i in range(1000000000):
         my_sum = my_sum + i * i
     print(my_sum)
 
