@@ -14,7 +14,7 @@ spec:
     spec:
       hostNetwork: true
       containers:
-      - name: app
+        - name: app
         image: 03_use_your_own_image
         imagePullPolicy: Never
         ports:
