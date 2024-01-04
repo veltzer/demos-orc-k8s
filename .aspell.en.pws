@@ -1,4 +1,4 @@
-personal_ws-1.1 en 993 
+personal_ws-1.1 en 994 
 AARRR
 ACLs
 ADPlus
@@ -470,6 +470,7 @@ SELinux
 SGID
 SHA
 SIGPIPE
+SIGTERM
 SIMD
 SLIs
 SLOs
