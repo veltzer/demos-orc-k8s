@@ -4,16 +4,14 @@
 This is an example of a job that calculated the sum of squared until 1,000,000
 """
 
-import time
-import sys
-
 
 def main():
     """ main entry point """
-    for counter in range(10):
-        print(f"counter is [{counter}]...")
-        sys.stdout.flush()
-        time.sleep(1)
+    print("starting...")
+    my_sum = 0
+    for i in range(1000000000):
+        my_sum = my_sum + i * i
+    print(my_sum)
 
 
 if __name__ == "__main__":

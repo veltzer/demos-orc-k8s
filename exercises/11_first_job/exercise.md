@@ -13,9 +13,6 @@
     `$ kubectl get jobs`
 * See details of your job using:
     `$ kubectl describe jobs.batch [yourjobname]`
-* Look at your logs using:
-    `$ kubectl logs jobs/[yourjobname]`
-* When the job is done show the logs of your job
 * Delete your job with:
     `$ kubectl delete jobs.batch [yourjobname]`
 
