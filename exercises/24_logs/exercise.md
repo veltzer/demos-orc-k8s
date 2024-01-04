@@ -2,7 +2,7 @@
 
 * Write a simple app that logs lines *and flushes them*
 * Wrap it up in a docker image
-* Upload it to minikube
+* Upload it to Minikube
 * Create a job that will run your image once, call the deployment `job.yaml`
 * Run your job using:
     `$ kubectl apply -f job.yaml`
