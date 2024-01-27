@@ -132,11 +132,11 @@ $(ALL_SYNTAX): out/%.syntax: %.py
 	$(Q)pymakehelper touch_mkdir $@
 $(ALL_LINT): out/%.lint: %.py
 	$(info doing [$@])
-	$(Q)PYTHONPATH=python pylint --reports=n --score=n $<
+	$(Q)python -m pylint --reports=n --score=n $<
 	$(Q)pymakehelper touch_mkdir $@
 $(ALL_FLAKE8): out/%.flake8: %.py
 	$(info doing [$@])
-	$(Q)PYTHONPATH=python flake8 $<
+	$(Q)python -m flake8 $<
 	$(Q)pymakehelper touch_mkdir $@
 $(ALL_MYPY): out/%.mypy: %.py
 	$(info doing [$@])
