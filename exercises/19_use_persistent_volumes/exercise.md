@@ -18,3 +18,6 @@ abnormally.
 * Kill your pod.
 
 * Run your reader pod and see that it reads the data left by the writer.
+
+## References
+[Persistent Volumes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
