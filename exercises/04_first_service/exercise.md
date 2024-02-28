@@ -45,3 +45,6 @@ And we connecting them in a very specific way:
 
 ## Answer a few questions
 * Which method for access do you find best and why?
+
+## References
+* [how to expose an external IP address](https://kubernetes.io/docs/tutorials/stateless-application/expose-external-ip-address)
