@@ -46,6 +46,7 @@ ALL_LINT:=$(addprefix out/,$(addsuffix .lint, $(basename $(ALL_PY))))
 ALL_FLAKE8:=$(addprefix out/,$(addsuffix .flake8, $(basename $(ALL_PY))))
 ALL_MYPY:=$(addprefix out/,$(addsuffix .mypy, $(basename $(ALL_PY))))
 ALL_STAMP:=$(addprefix out/, $(addsuffix .stamp, $(ALL_SH)))
+
 MD_SRC:=$(shell find exercises -type f -and -name "*.md")
 MD_BAS:=$(basename $(MD_SRC))
 MD_MDL:=$(addprefix out/,$(addsuffix .mdl,$(MD_BAS)))
