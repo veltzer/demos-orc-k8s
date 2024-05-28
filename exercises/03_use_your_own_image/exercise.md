@@ -14,6 +14,7 @@
         `$ minikube image load "${image_name}"`
 * run that image using:
     `$ kubectl run [params]`
+    * remember to pass `--image-pull-policy=Never` as a parameter
 * see that pod running using:
     `$ kubectl get pods`
 * see the logs of the pod using:
