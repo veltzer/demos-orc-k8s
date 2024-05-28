@@ -32,3 +32,11 @@
 
 * Please note that there are other ways to expose the dashboard:
     [link](https://stackoverflow.com/questions/47173463/how-to-access-local-kubernetes-minikube-dashboard-remotely)
+
+* for people on AWS:
+    run:
+    $ kubectl proxy
+  on your windows/mac/linux local machine:
+    $ ssh -L 12345:localhost:8001 ubuntu@[yourip]
+    and then
+    
