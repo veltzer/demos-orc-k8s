@@ -35,8 +35,7 @@
 
 * for people on AWS:
     run:
-    $ kubectl proxy
-  on your windows/mac/linux local machine:
-    $ ssh -L 12345:localhost:8001 ubuntu@[yourip]
-    and then
-    
+    `$ kubectl proxy`
+  on your Windows/Mac/Linux local machine:
+    `$ ssh -L 12345:localhost:8001 ubuntu@[yourip]`
+    and then point your browser to `localhost:12345`
