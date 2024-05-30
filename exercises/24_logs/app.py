@@ -10,9 +10,9 @@ import sys
 
 def main():
     """ main entry point """
-    for counter in range(10):
+    for counter in range(1000):
         print(f"counter is [{counter}]...")
-        sys.stdout.flush()
+        # sys.stdout.flush()
         time.sleep(1)
 
 

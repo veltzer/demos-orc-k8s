@@ -1,6 +1,6 @@
 # Using HELM
 
-* Installed helm. Use [this link](https://helm.sh/docs/intro/install/)
+* Install helm. Use [this link](https://helm.sh/docs/intro/install/)
 
 * Make sure you have Minikube running.
 
