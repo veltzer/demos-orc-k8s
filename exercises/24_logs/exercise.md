@@ -11,6 +11,7 @@
     so that Minikube will not try to pull your image from docker.hub
 * Monitor your logs via
     `$ kubectl logs -f job/myjob`
+* What happens if you forget to flush?
 
 References:
 * [Job specification in k8s](https://kubernetes.io/docs/concepts/workloads/controllers/job)
