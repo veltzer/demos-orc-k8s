@@ -10,4 +10,7 @@ spec:
       - name: myjob
         image: 26_pass_envionment_variables_to_pod
         imagePullPolicy: Never
+        env:
+        - name: MARK 
+          value: "veltzer"
       restartPolicy: Never

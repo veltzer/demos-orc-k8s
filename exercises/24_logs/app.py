@@ -5,7 +5,6 @@ This is an example of a job that calculated the sum of squared until 1,000,000
 """
 
 import time
-import sys
 
 
 def main():
