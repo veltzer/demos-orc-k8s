@@ -8,6 +8,6 @@ spec:
     spec:
       containers:
       - name: myjob
-        image: 11_first_job
+        image: 24_logs
         imagePullPolicy: Never
       restartPolicy: Never
