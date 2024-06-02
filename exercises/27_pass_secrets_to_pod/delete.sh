@@ -1,2 +1,2 @@
 #!/bin/bash -e
-kubectl delete -f *.yaml
+kubectl delete -f deploy.yaml
