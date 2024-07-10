@@ -42,7 +42,6 @@
     `$ ssh -L 12345:localhost:8001 ubuntu@[yourip]`
     and then point your browser to `localhost:12345`
 
-
 * If you want to see your dashboard without a NodePort service:
 
 * run:

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """
 This is an example of a job that calculated the sum of squared until 1,000,000
