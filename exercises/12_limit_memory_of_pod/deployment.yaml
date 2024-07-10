@@ -16,3 +16,8 @@ spec:
         - name: app
           image: 12_limit_memory_of_pod
           imagePullPolicy: Never
+          resources:
+            requests:
+              memory: "100Mi"
+            limits:
+              memory: "200Mi"
