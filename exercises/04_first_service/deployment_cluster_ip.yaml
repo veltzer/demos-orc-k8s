@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deployment
+  name: mydeployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: my-app
+      app: myapp
   template:
     metadata:
       labels:
-        app: my-app
+        app: myapp
     spec:
       containers:
       - name: nginx
@@ -21,12 +21,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-service
+  name: myservice
   labels:
-    app: my-app
+    app: myapp
 spec:
   selector:
-    app: my-app
+    app: myapp
   # this is the default
   type: ClusterIP
   ports:
