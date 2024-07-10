@@ -35,7 +35,17 @@
 
 * for people on AWS:
     run:
-    `$ kubectl proxy`
-  on your Windows/Mac/Linux local machine:
+`$ kubectl proxy &`
+    lets assume that you dashboard port on the AWS machine is 8001
+
+* on your Windows/Mac/Linux local machine:
     `$ ssh -L 12345:localhost:8001 ubuntu@[yourip]`
     and then point your browser to `localhost:12345`
+
+
+* If you want to see your dashboard without a NodePort service:
+
+* run:
+    `kubectl -n kubernetes-dashboard port-forward service/kubernetes-dashboard --address 0.0.0.0 9090 &`
+
+* Then create a tunnel to port 9090 of your machine in the cloud
