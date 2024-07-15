@@ -12,8 +12,7 @@ spec:
       labels:
         app: app
     spec:
-      hostNetwork: true
       containers:
       - name: app
-        image: 14_pod_with_errors
+        image: 29_pod_with_errors
         imagePullPolicy: Never

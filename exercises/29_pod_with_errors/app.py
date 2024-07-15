@@ -13,7 +13,7 @@ def main():
     for i in range(20):
         print(f"i is {i}")
         time.sleep(1)
-    # raise ValueError("Help, I'm crashing!")
+    raise ValueError("Help, I'm crashing!")
 
 
 if __name__ == "__main__":
