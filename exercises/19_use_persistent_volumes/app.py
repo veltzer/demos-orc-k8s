@@ -19,6 +19,8 @@ def main():
             for line in stream:
                 pass
             i = int(line) + 1
+        print(f"found previous {i} lines of data...")
+        sys.stdout.flush()
     else:
         i = 0
     with open(filename, "at", encoding="utf-8") as stream:
