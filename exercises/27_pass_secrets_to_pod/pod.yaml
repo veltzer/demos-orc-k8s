@@ -19,9 +19,11 @@ spec:
     - name: dotfile-test-container
       image: bash
       command:
-        - "cat" 
-        - "/mnt/secret-volume/my-secret"
+        - "sleep" 
+        - "3600"
+      #  - "cat" 
+      #  - "/mnt/secret-volume/my-secret"
       volumeMounts:
         - name: secret-volume
-          readOnly: true
           mountPath: "/mnt/secret-volume"
+          # readOnly: true
