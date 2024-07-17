@@ -4,10 +4,11 @@ metadata:
   name: mypod
 spec:
   containers:
-    - name: myfrontend
-      image: nginx
+    - name: mypod
+      image: 19_use_persistent_volumes
+      imagePullPolicy: Never
       volumeMounts:
-        - mountPath: "/var/www/html"
+        - mountPath: "/data"
           name: local-storage
   volumes:
     - name: local-storage
