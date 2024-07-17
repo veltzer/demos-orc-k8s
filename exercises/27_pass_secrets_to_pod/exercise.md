@@ -1,9 +1,10 @@
 # Pass Secrets to pods
 
-* Create a python script that prints the contents of all files in a certain folder.
+* Create a pod which is based on bash (so you would need to package a container)
 
-* Package that folder as docker image.
+* Deploy that pod to your k8s cluster with some secrets.
 
-* Deploy that image to your k8s cluster but with secrets in the same folder that python prints.
+* Enter the pod with 'kubectl exec' and show the secrets.
 
-* See that you are indeed printing the contents of the secrets.
+* Creating secrets can be done in two ways: using a yaml file with: king: Secret or
+    on the command line with kubectl create secret. Choose whatever you like best.
