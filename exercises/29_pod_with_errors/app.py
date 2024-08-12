@@ -5,13 +5,15 @@ This is a python application which dies from time to time
 """
 
 import time
+import sys
 
 
 def main():
     """ main entry point """
     print("starting...")
-    for i in range(20):
+    for i in range(60):
         print(f"i is {i}")
+        sys.stdout.flush()
         time.sleep(1)
     raise ValueError("Help, I'm crashing!")
 
