@@ -9,8 +9,8 @@ spec:
       imagePullPolicy: Never
       volumeMounts:
         - mountPath: "/data"
-          name: local-storage
+          name: my-local-storage
   volumes:
-    - name: local-storage
+    - name: my-local-storage
       persistentVolumeClaim:
         claimName: local-pvc
