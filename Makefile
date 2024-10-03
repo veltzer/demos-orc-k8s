@@ -1,6 +1,6 @@
-##########
-# params #
-##########
+##############
+# parameters #
+##############
 # do you want to see the commands executed ?
 DO_MKDBG:=0
 # do you want to check bash syntax?
