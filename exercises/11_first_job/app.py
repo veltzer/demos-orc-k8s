@@ -13,7 +13,7 @@ def main():
     sys.stdout.flush()
     my_sum = 0
     for i in range(100000000):
-        if i%1000000 == 0:
+        if i % 1000000 == 0:
             print(f"i is {i}...")
         my_sum = my_sum + i * i
     print(my_sum)
