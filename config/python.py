@@ -1,29 +1,19 @@
-from typing import List
+""" python deps for this project """
 
-
-config_requires: List[str] = []
-dev_requires: List[str] = []
-install_requires: List[str] = []
-build_requires: List[str] = [
+build_requires: list[str] = [
     "flask",
     "mysql-connector-python",
     "pyvardump",
     "requests",
     "types-requests",
 
+    "pydmt",
     "pymakehelper",
-    "pypitools",
     "pycmdtools",
-
-    "black",
 
     "pylint",
     "pytest",
     "pytest-cov",
-    "flake8",
-    "pyflakes",
     "mypy",
-    "pydmt",
 ]
-test_requires: List[str] = []
-requires = config_requires + install_requires + build_requires + test_requires
+requires = build_requires

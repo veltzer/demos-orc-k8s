@@ -14,7 +14,7 @@ def main():
     filename = "/data/data.txt"
 
     if os.path.isfile(filename):
-        with open(filename, "rt", encoding="utf-8") as stream:
+        with open(filename, encoding="utf-8") as stream:
             line = "0"
             for line in stream:
                 pass
@@ -23,7 +23,7 @@ def main():
         sys.stdout.flush()
     else:
         i = 0
-    with open(filename, "at", encoding="utf-8") as stream:
+    with open(filename, "a", encoding="utf-8") as stream:
         while True:
             stream.write(f"{i}\n")
             stream.flush()
