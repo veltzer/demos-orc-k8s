@@ -7,7 +7,7 @@ pydmt
 pylint
 pymakehelper
 pytest
-pytest-cov
 pyvardump
 requests
+ruff
 types-requests

@@ -13,7 +13,7 @@ build_requires: list[str] = [
 
     "pylint",
     "pytest",
-    "pytest-cov",
     "mypy",
+    "ruff",
 ]
 requires = build_requires
