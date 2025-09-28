@@ -5,8 +5,12 @@
 * By default Minikube does not come with a dashboard
 
 * Run:
-    `$ kubectl get pods --all-namespaces`
-    and verity that you don't see dashboard pods there
+
+```bash
+kubectl get pods --all-namespaces
+```
+
+and verity that you don't see dashboard pods there
 
 * Install the dashboard add on:
 
@@ -19,6 +23,15 @@ minikube addons enable metrics-server
 
 ```bash
 kubectl get pods --all-namespaces
+```
+
+* See that you can connect via ssh
+
+```bash
+# to find the ip of machine running the dashboard
+kubectl describe -n kubernetes-dashboard pods/kubernetes-dashboard-855c9754f9-s8rx9  | grep "^IP:"
+minikube ssh
+curl "[the_ip_you_found_earlier]:9090"
 ```
 
 and verify that you do see dashboard pods there
