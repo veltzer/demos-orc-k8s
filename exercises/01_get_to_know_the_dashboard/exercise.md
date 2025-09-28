@@ -42,7 +42,7 @@
     `$ ssh -L 12345:localhost:8001 ubuntu@[yourip]`
     and then point your browser to `localhost:12345`
 
-* If you want to see your dashboard without a NodePort service assuming port 80 is open to the outside world:
+* If you want to see your dashboard without a NodePort service assuming port 80 is open to the outside world (add sudo if you want a restricted port like 80 below)
 
 * run:
     `kubectl -n kubernetes-dashboard port-forward service/kubernetes-dashboard --address 0.0.0.0 80:9090 &`
