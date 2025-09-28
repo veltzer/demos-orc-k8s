@@ -65,7 +65,10 @@ and verify that you do see dashboard pods there
 * If you want to see your dashboard without a NodePort service assuming port 80 is open to the outside world (add sudo if you want a restricted port like 80 below)
 
 * run:
-    `kubectl -n kubernetes-dashboard port-forward service/kubernetes-dashboard --address 0.0.0.0 8080:9090 &`
+
+```bash
+kubectl -n kubernetes-dashboard port-forward service/kubernetes-dashboard --address 0.0.0.0 8080:9090 &
+```
 
 * Then create a tunnel to port 9090 of your machine in the cloud
     `ssh -i [private_key_file] -L [local_port]:localhost:[remote_port] [user]@[remote_address]`
