@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -eu
 
 folder="${HOME}/binaries"
 if [ -d "${folder}" ]

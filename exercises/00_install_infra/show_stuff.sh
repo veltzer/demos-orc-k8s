@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -eu
 
 echo "showing pods"
 kubectl get pods --all-namespaces
