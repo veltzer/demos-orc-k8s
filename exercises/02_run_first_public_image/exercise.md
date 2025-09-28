@@ -15,7 +15,7 @@ kubectl get pods
 ```
 
 * see more information about your new pod using:
-    
+
 ```bash
 kubectl describe pods
 ```

@@ -1,23 +1,55 @@
 # Pull image from local Docker into Minikube
 
-* pull an image (nginx) to your local docker repository.
-    `$ docker pull nginx`
-* copy that image into your Minikube repository using:
-    `$ minikube image load nginx`
-* then run a deployment on Minikube that uses that image.
+* Pull an image (nginx) to your local docker repository.
 
-* create your own image from a Python app that prints regularly to standard output.
-    use the following command to build your image:
-        `$ docker build [params] .`
-    load your image to Minikube using:
-        `$ minikube image rm "${image_name}"`
-        `$ minikube image load "${image_name}"`
-* run that image using:
-    `$ kubectl run [params]`
-    * remember to pass `--image-pull-policy=Never` as a parameter
-* see that pod running using:
-    `$ kubectl get pods`
-* see the logs of the pod using:
-    `$ kubectl logs [...]`
-* terminate the pod using:
-    `$ kubectl delete pod [...]`
+```bash
+docker pull nginx
+```
+
+* Copy that image into your Minikube repository using:
+
+```bash
+minikube image load nginx
+```
+
+* Run a deployment on Minikube that uses that image.
+
+* Create your own image from a Python app that prints regularly to standard output.
+use the following command to build your image:
+
+```bash
+docker build [params] .
+```
+
+load your image to Minikube using:
+
+```bash
+minikube image rm "${image_name}"
+minikube image load "${image_name}"
+```
+
+* Run that image using:
+
+```bash
+kubectl run [params]
+```
+
+remember to pass `--image-pull-policy=Never` as a parameter
+
+* See that pod running using:
+
+```bash
+kubectl get pods
+```
+
+* See the logs of the pod using:
+
+```bash
+kubectl logs [...]
+```
+
+* Terminate the pod using:
+
+```bash
+kubectl delete pod [...]
+```
