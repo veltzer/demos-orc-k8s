@@ -9,12 +9,19 @@
     and verity that you don't see dashboard pods there
 
 * Install the dashboard add on:
-    `$ minikube addons enable dashboard`
-    `$ minikube addons enable metrics-server`
+
+```bash
+minikube addons enable dashboard
+minikube addons enable metrics-server
+```
 
 * Now see the new pods with:
-    `$ kubectl get pods --all-namespaces`
-    and verify that you do see dashboard pods there
+
+```bash
+kubectl get pods --all-namespaces
+```
+
+and verify that you do see dashboard pods there
 
 * To expose the dashboard port to the outside world we will define a service.
     Take the attached `minikube-dashboard.yaml` file and apply it like this:
