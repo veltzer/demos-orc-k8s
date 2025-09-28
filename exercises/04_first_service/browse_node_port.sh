@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -eu
 
 wget -O- --quiet "http://$(minikube ip):30000" | head
 # xdg-open "http://$(minikube ip):30000"

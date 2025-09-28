@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash -eu
 
 # find the ip of the host of the deployment
 ip=$(minikube ip)

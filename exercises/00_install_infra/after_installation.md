@@ -3,7 +3,7 @@
 Use the following commands to describe your cluster:
 
 ```bash
-$ kubectl describe nodes
-$ kubectl describe pods
-$ kubectl get namespaces
+kubectl describe nodes
+kubectl describe pods
+kubectl get namespaces
 ```

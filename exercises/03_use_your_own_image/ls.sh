@@ -1,2 +1,3 @@
-#!/bin/bash -e
+#!/bin/bash -eu
+
 docker image ls

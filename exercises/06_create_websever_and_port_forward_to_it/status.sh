@@ -1,2 +1,3 @@
-#!/bin/bash -e
+#!/bin/bash -eu
+
 kubectl get pods

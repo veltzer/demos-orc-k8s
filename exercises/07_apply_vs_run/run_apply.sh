@@ -1,3 +1,3 @@
-#!/bin/bash -e
+#!/bin/bash -eu
 
 kubectl apply -f ./*.yaml
