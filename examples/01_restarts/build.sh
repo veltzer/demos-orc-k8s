@@ -1,4 +1,5 @@
-#!/bin/bash -e
+#!/bin/bash -eu
+
 image_name=$(basename "${PWD}")
 
 # one way of doing it
