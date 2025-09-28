@@ -29,7 +29,7 @@ use `get(1)` or `curl(1)`, or just a browser
 * Enter your pod using:
 
 ```bash
-kubectl exec -it
+kubectl exec -it [pod_name] -- bash
 ```
 
 * Run your deployment command again. Did k8s deploy another pod? Why?
