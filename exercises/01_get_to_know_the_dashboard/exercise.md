@@ -37,12 +37,12 @@ curl "[the_ip_you_found_earlier]:9090"
 and verify that you do see dashboard pods there
 
 * To expose the dashboard port to the outside world we will define a service.
-    Take the attached `minikube-dashboard.yaml` file and apply it like this:
-    `$ kubectl apply -f minikube-dashboard.yaml`
+  Take the attached `minikube-dashboard.yaml` file and apply it like this:
+  `$ kubectl apply -f minikube-dashboard.yaml`
 
 * Now view the dashboard by accessing the ip of Minikube:
-    `$ minikube ip`
-    at port 31000
+  `$ minikube ip`
+  at port 31000
 
 * Now familiarize yourself with the Kubernetes dashboard.
     * the namespace selector
@@ -51,16 +51,16 @@ and verify that you do see dashboard pods there
     * the settings
 
 * Please note that there are other ways to expose the dashboard:
-    [link](https://stackoverflow.com/questions/47173463/how-to-access-local-kubernetes-minikube-dashboard-remotely)
+  [How to access the minikube dashboard remotely (Stack Overflow)](https://stackoverflow.com/questions/47173463/how-to-access-local-kubernetes-minikube-dashboard-remotely)
 
 * for people on AWS:
-    run:
+  run:
 `$ kubectl proxy &`
-    lets assume that you dashboard port on the AWS machine is 8001
+  lets assume that you dashboard port on the AWS machine is 8001
 
 * on your Windows/Mac/Linux local machine:
-    `$ ssh -L 12345:localhost:8001 ubuntu@[yourip]`
-    and then point your browser to `localhost:12345`
+  `$ ssh -L 12345:localhost:8001 ubuntu@[yourip]`
+  and then point your browser to `localhost:12345`
 
 * If you want to see your dashboard without a NodePort service assuming port 80 is open to the outside world (add sudo if you want a restricted port like 80 below)
 

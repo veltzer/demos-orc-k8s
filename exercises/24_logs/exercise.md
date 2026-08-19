@@ -5,12 +5,12 @@
 * Upload it to Minikube
 * Create a job that will run your image once, call the deployment `job.yaml`
 * Run your job using:
-    `$ kubectl apply -f job.yaml`
-    remember to put:
-        imagePullPolicy: Never
-    so that Minikube will not try to pull your image from docker.hub
+  `$ kubectl apply -f job.yaml`
+  remember to put:
+  imagePullPolicy: Never
+  so that Minikube will not try to pull your image from docker.hub
 * Monitor your logs via
-    `$ kubectl logs -f job/myjob`
+  `$ kubectl logs -f job/myjob`
 * What happens if you forget to flush?
 
 References:

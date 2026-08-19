@@ -7,4 +7,4 @@
 * Enter the pod with 'kubectl exec' and show the secrets.
 
 * Creating secrets can be done in two ways: using a yaml file with: king: Secret or
-    on the command line with kubectl create secret. Choose whatever you like best.
+  on the command line with kubectl create secret. Choose whatever you like best.

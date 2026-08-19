@@ -35,4 +35,4 @@ kubectl exec -it [pod_name] -- bash
 * Run your deployment command again. Did k8s deploy another pod? Why?
 
 * Deploy 3 nginx pods using `replicas: 3` and show how you can access each nginx
-    separately. Do not use a service!
+  separately. Do not use a service!

@@ -5,7 +5,7 @@ means using a disk that doesn't go away when the app using it dies either normal
 abnormally.
 
 * Write two python apps, one that writes data to a file and one that reads data from that same file.
-    The file should be in a folder called `/data`.
+  The file should be in a folder called `/data`.
 
 * Define a `PersistentVolume` as a simple folder of type `local`.
 

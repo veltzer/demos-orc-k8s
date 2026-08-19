@@ -18,9 +18,9 @@ And we connecting them in a very specific way:
 * Create a deployment file with a `nginx` replicated twice and a service.
 * Deploy it.
 * See your newly created service with:
-    `$ kubectl get services`
-    and
-    `$ kubectl describe service [service_name]`
+  `$ kubectl get services`
+  and
+  `$ kubectl describe service [service_name]`
     * Note that a service called `kubernetes` is already there. Don't touch it.
 * You can't still can't access your service, can you?
 
@@ -30,16 +30,16 @@ And we connecting them in a very specific way:
 
 ## Access with proxy
 * run a `kubectl` proxy:
-    `$ kubectl proxy`
+  `$ kubectl proxy`
 * now access your service via:
-    `http://localhost:8001/api/v1/namespaces/[namespace]/services/[service-name]/proxy`
+  `http://localhost:8001/api/v1/namespaces/[namespace]/services/[service-name]/proxy`
     * namespace = "default"
     * service-name = [your-service-name]
 * The problem with the proxy is that you have to keep the proxy process alive to access your service.
 
 ## Access with port forwarding
 * Create a port forwarder to your service:
-    `$ kubectl port-forward service/[service-name] 8080:80`
+  `$ kubectl port-forward service/[service-name] 8080:80`
 * Now you can access your service at `localhost:8080`
 * The problem with port-forwarding is that you have to keep the port forwarding process alive access your service.
 
