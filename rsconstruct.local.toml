@@ -19,3 +19,10 @@ batch = false
 # exactly that similarity. Per-file invocations run the same per-file checks.
 [processor.pylint]
 batch = false
+
+# Runtime deps so CI installs what the code imports (pylint/mypy resolve
+# them) -- the demos-cloud-aws pattern.
+[dependencies]
+pip = [
+    "flask",
+]
