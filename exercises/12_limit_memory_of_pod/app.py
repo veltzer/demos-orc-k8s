@@ -4,9 +4,9 @@
 Application which grows in memory requirements all the time
 """
 
-import time
-import sys
 import random
+import sys
+import time
 
 big_array = []
 while True:

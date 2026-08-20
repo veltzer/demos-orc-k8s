@@ -4,8 +4,8 @@
 This is a python application which dies from time to time
 """
 
-import time
 import sys
+import time
 
 
 def main():

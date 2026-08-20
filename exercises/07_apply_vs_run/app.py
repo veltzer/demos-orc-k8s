@@ -6,8 +6,8 @@ A flask application that can be crashed
 
 import os
 import signal
-from flask import Flask
 
+from flask import Flask
 
 app = Flask("app")
 

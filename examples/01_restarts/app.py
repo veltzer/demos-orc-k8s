@@ -4,8 +4,8 @@
 Simple app in python
 """
 
-import time
 import sys
+import time
 
 i = 0
 while True:

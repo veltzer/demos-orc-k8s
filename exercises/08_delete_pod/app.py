@@ -4,9 +4,9 @@
 This is an app which catched SIGTERM to do some cleanup.
 """
 
-import time
-import sys
 import signal
+import sys
+import time
 
 
 def do_term(_signum, *_args):

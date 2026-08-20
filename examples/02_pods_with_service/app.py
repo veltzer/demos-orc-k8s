@@ -5,8 +5,8 @@ A flask application that can be crashed
 """
 
 import socket
-from flask import Flask
 
+from flask import Flask
 
 app = Flask("app")
 
