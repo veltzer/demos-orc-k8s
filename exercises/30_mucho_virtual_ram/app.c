@@ -9,7 +9,7 @@ int main(int argc, char** argv, char** envp) {
 		printf("Oops, I allocated another 10Gig (%d)\n", counter);
 		fflush(stdout);
 		unsigned long int size_to_alloc=10*1024L*1024L*1024L;
-		void* p=malloc(size_to_alloc);
+		const void* p=malloc(size_to_alloc);
 		assert(p!=NULL);
 		sleep(1);
 		counter++;

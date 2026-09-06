@@ -26,6 +26,7 @@ src_dirs = ["tera.templates"]
 
 [processor.rumdl]
 src_dirs = ["exercises"]
+src_files = ["README.md"]
 
 [processor.zspell]
 src_dirs = ["exercises"]
@@ -48,8 +49,7 @@ batch = false
 args = ["--no-incremental", "--cache-dir=/dev/null"]
 
 [processor.shellcheck]
-src_dirs = ["scripts", "exercises", "config"]
-args = ["--severity=error", "--shell=bash"]
+src_dirs = ["scripts", "exercises", "config", "examples"]
 
 # ─── lua ─────────────────────────────────────────────────────────────────────
 
@@ -64,3 +64,27 @@ src_dirs = ["."]
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
+
+# ─── yaml ────────────────────────────────────────────────────────────────────
+
+# the helm chart's templates/ hold Go templating ({{- if ... }}), not YAML
+# documents, so yamllint cannot parse them; the chart's own values.yaml and
+# Chart.yaml are still checked.
+[processor.yamllint]
+src_dirs = ["examples", "exercises"]
+src_exclude_dirs = ["exercises/21_create_helm_chart/mychart/templates"]
+
+# ─── docker ──────────────────────────────────────────────────────────────────
+
+[processor.hadolint]
+src_dirs = ["examples", "exercises"]
+
+# ─── c / c++ ─────────────────────────────────────────────────────────────────
+
+[processor.cppcheck]
+src_dirs = ["exercises/30_mucho_virtual_ram"]
+args = [
+	"--error-exitcode=1",
+	"--enable=warning,style,performance,portability",
+	"--inline-suppr",
+]

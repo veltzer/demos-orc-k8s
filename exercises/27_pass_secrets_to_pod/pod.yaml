@@ -13,15 +13,15 @@ spec:
   volumes:
     - name: secret-volume
       secret:
-        secretName: my-secret 
+        secretName: my-secret
   restartPolicy: Never
   containers:
     - name: dotfile-test-container
       image: bash
       command:
-        - "sleep" 
+        - "sleep"
         - "3600"
-      #  - "cat" 
+      #  - "cat"
       #  - "/mnt/secret-volume/my-secret"
       volumeMounts:
         - name: secret-volume

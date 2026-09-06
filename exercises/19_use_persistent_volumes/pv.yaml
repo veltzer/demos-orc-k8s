@@ -4,7 +4,7 @@ metadata:
   name: local-pv
 spec:
   capacity:
-    storage: 5Gi 
+    storage: 5Gi
   accessModes:
   - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
