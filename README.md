@@ -1,3 +1,6 @@
+<!-- This file is generated. Do not edit it by hand: your changes will be
+     lost on the next build. Edit the template it is rendered from, or the
+     values that template reads, and build again. -->
 # *demos-k8s* project by Mark Veltzer
 
 description: Demos-k8s shows you how to use kubernetes
