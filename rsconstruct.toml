@@ -69,9 +69,6 @@ src_dirs = [".github/workflows"]
 
 # ─── yaml ────────────────────────────────────────────────────────────────────
 
-# the helm chart's templates/ hold Go templating ({{- if ... }}), not YAML
-# documents, so yamllint cannot parse them; the chart's own values.yaml and
-# Chart.yaml are still checked.
 [processor.checker.iyamllint]
 src_dirs = ["examples", "exercises"]
 src_exclude_dirs = ["exercises/21_create_helm_chart/mychart/templates"]
