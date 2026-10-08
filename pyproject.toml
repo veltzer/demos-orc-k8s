@@ -11,7 +11,6 @@ dev = [
     "mypy",
     "pytest",
     "ruff",
-    "yamllint",
 ]
 
 [tool.uv]
