@@ -55,7 +55,7 @@ src_dirs = ["scripts", "exercises", "config", "examples"]
 
 # ─── lua ─────────────────────────────────────────────────────────────────────
 
-[processor.checker.luacheck]
+[processor.checker.iluacheck]
 src_dirs = ["config"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
