@@ -42,13 +42,8 @@ src_dirs = ["scripts", "config", "exercises"]
 
 batch = false
 
-[processor.checker.mypy]
+[processor.checker.pyrefly]
 src_dirs = ["scripts", "config", "exercises"]
-batch = false
-# mypy 2.3 crashes with an INTERNAL ERROR on the shared incremental cache
-# under concurrent per-file runs; --no-incremental sidesteps it (every file
-# is still fully checked).
-args = ["--no-incremental", "--cache-dir=/dev/null"]
 
 [processor.checker.shellcheck]
 src_dirs = ["scripts", "exercises", "config", "examples"]
