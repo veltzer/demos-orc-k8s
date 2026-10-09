@@ -75,7 +75,7 @@ src_exclude_dirs = ["exercises/21_create_helm_chart/mychart/templates"]
 
 # ─── docker ──────────────────────────────────────────────────────────────────
 
-[processor.checker.hadolint]
+[processor.checker.idockerfile]
 src_dirs = ["examples", "exercises"]
 
 # ─── c / c++ ─────────────────────────────────────────────────────────────────
