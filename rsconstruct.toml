@@ -45,7 +45,7 @@ batch = false
 [processor.checker.pyrefly]
 src_dirs = ["scripts", "config", "exercises"]
 
-[processor.checker.shellcheck]
+[processor.checker.ishellcheck]
 src_dirs = ["scripts", "exercises", "config", "examples"]
 
 # ─── lua ─────────────────────────────────────────────────────────────────────
