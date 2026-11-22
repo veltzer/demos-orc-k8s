@@ -5,7 +5,7 @@
 
 description: Demos-k8s shows you how to use kubernetes
 
-project website: https://veltzer.github.io/demos-orc-k8s
+project website: <https://veltzer.github.io/demos-orc-k8s>
 
 author: Mark Veltzer
 
