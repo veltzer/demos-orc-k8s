@@ -1,3 +1,5 @@
+# The commented examples below are helm create's own: each is indented as it
+# nests once uncommented, so the yamllint directives above them keep that.
 # Default values for mychart.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
@@ -29,9 +31,11 @@ podAnnotations: {}
 podLabels: {}
 
 podSecurityContext: {}
+# yamllint disable-line rule:comments-indentation
   # fsGroup: 2000
 
 securityContext: {}
+# yamllint disable-line rule:comments-indentation
   # capabilities:
   #   drop:
   #   - ALL
@@ -47,6 +51,7 @@ ingress:
   enabled: false
   className: ""
   annotations: {}
+  # yamllint disable-line rule:comments-indentation
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
@@ -60,6 +65,7 @@ ingress:
   #      - chart-example.local
 
 resources: {}
+# yamllint disable-line rule:comments-indentation
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
   # resources, such as Minikube. If you do want to specify resources, uncomment the following
