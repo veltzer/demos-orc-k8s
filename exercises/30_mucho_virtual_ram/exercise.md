@@ -9,4 +9,5 @@
 * Answer the question: what does k8s do when your application exceeds it's memory limit?
 
 ## References
+
 * [Resource Management for Pods and Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers)

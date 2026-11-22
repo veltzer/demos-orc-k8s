@@ -1,6 +1,7 @@
 # Install `kubectl` and `minikube`
 
 Install `kubectl` and `minikube` with the following steps:
+
 * Review the script called `install_kubectl_minikube.sh`
 * Run it
 * Look at `~/binaries` to see if you have `kubectl` and `minikube` in it.

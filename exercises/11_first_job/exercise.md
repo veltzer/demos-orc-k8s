@@ -22,5 +22,6 @@ Notice that in the exercise so far the job lives in your cluster forever. You ma
 * See that it works.
 
 References:
+
 * [Job specification in k8s](https://kubernetes.io/docs/concepts/workloads/controllers/job)
 * [Auto cleanup of jobs](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished)
