@@ -1,3 +1,4 @@
+---
 # The commented examples below are helm create's own: each is indented as it
 # nests once uncommented, so the yamllint directives above them keep that.
 # Default values for mychart.
