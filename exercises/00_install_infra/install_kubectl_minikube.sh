@@ -1,7 +1,7 @@
 #!/bin/bash -eu
 
 folder="${HOME}/binaries"
-if [ -d "${folder}" ]
+if [[ -d "${folder}" ]]
 then
 	echo "removing previous [${folder}]..."
 	rm -rf "${folder}"

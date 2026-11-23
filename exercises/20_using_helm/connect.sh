@@ -1,6 +1,7 @@
 #!/bin/bash -eu
 
-MYSQL_ROOT_PASSWORD=$(kubectl get secret --namespace default my-release-mysql -o jsonpath="{.data.mysql-root-password}" | base64 -d)
+encoded_password=$(kubectl get secret --namespace default my-release-mysql -o jsonpath="{.data.mysql-root-password}")
+MYSQL_ROOT_PASSWORD=$(base64 -d <<<"${encoded_password}")
 # echo "password is ${MYSQL_ROOT_PASSWORD}"
 
 # delete the old my-release-mysql-client pod
