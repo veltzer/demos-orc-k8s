@@ -75,11 +75,12 @@ src_dirs = ["examples", "exercises"]
 
 # ─── c / c++ ─────────────────────────────────────────────────────────────────
 
+# One program per file (app.c): the default one-run-per-file mode fits.
 [processor.checker.cppcheck]
 src_dirs = ["exercises/30_mucho_virtual_ram"]
 args = [
 	"--error-exitcode=1",
-	"--enable=warning,style,performance,portability",
+	"--enable=warning,style,performance,portability,information,unusedFunction",
 	"--check-level=exhaustive",
 	"--inline-suppr",
 ]
