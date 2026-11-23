@@ -15,10 +15,8 @@ def main():
 
     if os.path.isfile(filename):
         with open(filename, encoding="utf-8") as stream:
-            line = "0"
-            for line in stream:
-                pass
-            i = int(line) + 1
+            lines = stream.readlines()
+            i = int(lines[-1] if lines else "0") + 1
         print(f"found previous {i} lines of data...")
         sys.stdout.flush()
     else:
