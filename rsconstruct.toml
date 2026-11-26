@@ -65,7 +65,8 @@ args = ["--offline", "--no-progress", "--persona=pedantic"]
 # ─── yaml ────────────────────────────────────────────────────────────────────
 
 [processor.checker.iyamllint]
-src_dirs = ["examples", "exercises"]
+src_files = [".hadolint.yaml", ".yamllint.yaml"]
+src_dirs = [".github", "examples", "exercises"]
 src_exclude_dirs = ["exercises/21_create_helm_chart/mychart/templates"]
 
 # ─── docker ──────────────────────────────────────────────────────────────────
