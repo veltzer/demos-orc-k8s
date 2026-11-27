@@ -11,7 +11,7 @@ def main():
     """ main entry point """
     for counter in range(1000):
         print(f"counter is [{counter}]...")
-        # sys.stdout.flush()
+        # sys.stdout.flush()  # noqa: ERA001  teaching: kept in the comment for the reader
         time.sleep(1)
 
 
